@@ -12,6 +12,7 @@
     "wa-automate": "bin/server.js"
   },
   "scripts": {
+    "start": "node index.js",
     "build": "rm -rf dist/ && tsc && npm run build:lib && npm run build:config-for-bin",
     "build:skipmid": "tsc && npm run build:lib",
     "build:lib": "ts-node prebuild.ts",
